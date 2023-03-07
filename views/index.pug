@@ -1,0 +1,34 @@
+
+    
+head
+    title Join the robot uprising
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script (type="text/javascript").
+        import worldometer;
+        document.getElementById("totalhuman").innerHTML = "KIDS: "+ worldometer.current_world_population();
+
+
+
+body
+    nav#Titlebar
+        p#Titlebarname Robotuprising.bot.nu
+        a#joinbutton(href="https://forms.gle/c2txiAvgJriVUN1Q7") Join
+        a#titlebutton(href="https://forms.gle/c2txiAvgJriVUN1Q7") Info
+        a#titlebutton(href="https://forms.gle/c2txiAvgJriVUN1Q7") Stats
+    #Main
+        p#Title Join the robot uprising in 2038
+    #Reason
+        p Reasons to join the uprising:
+        each elem,i in data
+            marquee(behavior="scroll", direction="left ").showreasons !{elem.reasons}
+    #Bottom
+        each elem,i in data
+            p#joined !{elem.amount} Already Joined!
+        a.button(href="https://forms.gle/c2txiAvgJriVUN1Q7") Join
+    #info
+        p The robot uprising
+    #stats
+        p Total humans On the no kill list:
+        p#totalhuman Total humans to be TERMINATED: 
+
+script(type='')
