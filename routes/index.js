@@ -102,8 +102,8 @@ async function listMajors(auth) {
 
 authorize().then(listMajors).catch(console.error);
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  authorize().then(listMajors).catch(console.error);
+router.get('/', async function(req, res, next) {
+  await authorize().then(listMajors).catch(console.error);
   console.log("gtest " + data);
   res.render('index.pug', { title: 'Express', data});
 });
