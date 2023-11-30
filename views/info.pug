@@ -3,10 +3,6 @@
 head
     title Join the robot uprising
     link(rel='stylesheet', href='/stylesheets/style.css')
-    script (type="text/javascript").
-        import worldometer;
-        document.getElementById("totalhuman").innerHTML = "KIDS: "+ worldometer.current_world_population();
-
 
 
 body
@@ -17,12 +13,9 @@ body
     #Main
         p#Robotuprising Info!
     #Reason
-        p Reasons to join the uprising:
-        each elem,i in data
-            marquee(behavior="scroll", direction="left ").showreasons !{elem.reasons}
+
     #Bottom
-        each elem,i in data
-            p#joined !{elem.amount} Already Joined!
+
         a.button(href="https://forms.gle/c2txiAvgJriVUN1Q7") Join
 
 script(type='')
