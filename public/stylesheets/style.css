@@ -15,6 +15,7 @@ body{
   color: white;
   line-height: 0;
   font-size: 20;
+  z-index: 10;
 }
 #Titlebarname {
   float: left;
