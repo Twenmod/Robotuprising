@@ -9,6 +9,7 @@ body{
   padding-right: 1vw;
   width: 98vw;
   height: 40px;
+  margin: 0;
   position: fixed;
   background-color: black;
   color: white;
