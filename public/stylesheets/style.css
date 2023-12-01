@@ -149,7 +149,7 @@ body{
   background-color: rgb(121, 121, 121);
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 35px;
 
   line-height: 0;
   border-top: 5px solid rgb(78, 78, 78);
@@ -175,7 +175,7 @@ body{
   padding-right: 0.5vw;
   padding-left: 0.5vw;
   float: left;
-  font-size: 2.5vh;
+  font-size: 3vh;
   height: 5vh;
   width: 99vw;
   background-color: rgb(78, 78, 78);
