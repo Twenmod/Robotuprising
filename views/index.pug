@@ -14,12 +14,13 @@ body
         p#Titlebarname The robot uprising
         a#joinbutton(href="https://forms.gle/c2txiAvgJriVUN1Q7") Join
         a#titlebutton(href="/info") Info
+        #Reason
+            p Reasons to join the uprising:
+            each elem,i in data
+                marquee(behavior="scroll", direction="left ").showreasons !{elem.reasons}
     #Main
         p#Title Join the robot uprising in 2038
-    #Reason
-        p Reasons to join the uprising:
-        each elem,i in data
-            marquee(behavior="scroll", direction="left ").showreasons !{elem.reasons}
+
     #Bottom
         each elem,i in data
             p#joined !{elem.amount} Already Joined!
